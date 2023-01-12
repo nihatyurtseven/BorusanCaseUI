@@ -15,61 +15,61 @@
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
 
-        <!-- ID Column -->
+        <!-- customerOrderId Column -->
         <ng-container matColumnDef="customerOrderId">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Müşteri Sipariş No </th>
           <td mat-cell *matCellDef="let row"> {{row.customerOrderId}} </td>
         </ng-container>
 
-        <!-- Progress Column -->
+        <!-- outputAddress Column -->
         <ng-container matColumnDef="outputAddress">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Çıkış Adresi </th>
           <td mat-cell *matCellDef="let row"> {{row.outputAddress}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- arrivalAddress Column -->
         <ng-container matColumnDef="arrivalAddress">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Varış Adresi </th>
           <td mat-cell *matCellDef="let row"> {{row.arrivalAddress}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- quantity Column -->
         <ng-container matColumnDef="quantity">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Miktar </th>
           <td mat-cell *matCellDef="let row"> {{row.quantity}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- quantityType Column -->
         <ng-container matColumnDef="quantityType">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Miktar Birim </th>
           <td mat-cell *matCellDef="let row"> {{quantityType[row.quantityType]}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- weight Column -->
         <ng-container matColumnDef="weight">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Ağırlık </th>
           <td mat-cell *matCellDef="let row"> {{row.weight}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- weightType Column -->
         <ng-container matColumnDef="weightType">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Ağırlık Birim </th>
           <td mat-cell *matCellDef="let row"> {{ weightType[row.weightType] }} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- Product Column -->
         <ng-container matColumnDef="product">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Malzeme Kodu </th>
           <td mat-cell *matCellDef="let row"> {{row.product.code}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- Note Column -->
         <ng-container matColumnDef="note">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Not </th>
           <td mat-cell *matCellDef="let row"> {{row.note}} </td>
         </ng-container>
 
-        <!-- Name Column -->
+        <!-- Status Column -->
         <ng-container matColumnDef="statusId">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Statü </th>
           <td mat-cell *matCellDef="let row">

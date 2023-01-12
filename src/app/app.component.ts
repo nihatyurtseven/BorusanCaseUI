@@ -48,8 +48,7 @@ export class AppComponent implements AfterViewInit {
   getOrders(){
     this.orderService.getOrders().subscribe(result=>{
       this.orders = result;
-      console.log(this.orders);
-    this.dataSource = new MatTableDataSource(this.orders);
+      this.dataSource = new MatTableDataSource(this.orders);
     });
   }
   ngAfterViewInit() {
@@ -67,14 +66,11 @@ export class AppComponent implements AfterViewInit {
   }
 
   statuUpdate(order:Order){
-    console.log("sttu update",order);
-
     const dialogRef = this.dialog.open(StatuUpdateDialogComponent, {
       data: order,
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed', result);
       order = result;
       this.getOrders();
     });
